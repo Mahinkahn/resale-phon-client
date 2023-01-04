@@ -63,7 +63,7 @@ const ProductCard = ({ product, setBooking }) => {
 
     return (
         <div className="card m-4 bg-base-100 shadow-xl">
-            <figure><img className='w-3/4 ' src={productImg} alt="Shoes" /></figure>
+            <figure><img className='w-3/4 m-2' src={productImg} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{productName}</h2>
                 <p>Original Price : $ {originalPrice}</p>
