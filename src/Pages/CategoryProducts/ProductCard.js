@@ -34,7 +34,7 @@ const ProductCard = ({ product, setBooking }) => {
         queryKey: ['user'],
         queryFn: async () => {
 
-            const res = await fetch(`https://drim-store-server-dvsrshohan.vercel.app/user?email=${email}`);
+            const res = await fetch(`.app/user?email=${email}`);
             const data = await res.json();
             return data;
         }
