@@ -22,7 +22,7 @@ const CheckOutForm = ({ booking }) => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/create-payment-intent', {
+        fetch('https://drim-store-server-dvsrshohan.vercel.app/create-payment-intent', {
             method: "POST",
             headers: {
                 'content-type': 'application/json',
@@ -96,7 +96,7 @@ const CheckOutForm = ({ booking }) => {
             }
 
 
-            fetch('http://localhost:5000/payment', {
+            fetch('https://drim-store-server-dvsrshohan.vercel.app/payment', {
                 method: "POST",
                 headers: {
                     'content-type': 'application/json',
@@ -124,7 +124,7 @@ const CheckOutForm = ({ booking }) => {
     }
 
     const handleSoldStatus = id => {
-        fetch(`http://localhost:5000/productSoldStatus/${id}`, {
+        fetch(`https://drim-store-server-dvsrshohan.vercel.app/productSoldStatus/${id}`, {
             method: 'PUT'
         })
             .then(res => res.json())

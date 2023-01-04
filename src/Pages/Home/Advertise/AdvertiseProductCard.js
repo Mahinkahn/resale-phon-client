@@ -32,14 +32,14 @@ const AdvertiseProductCard = ({ product, setBooking }) => {
         queryKey: ['user'],
         queryFn: async () => {
 
-            const res = await fetch(`http://localhost:5000/user?email=${email}`);
+            const res = await fetch(`https://drim-store-server-dvsrshohan.vercel.app/user?email=${email}`);
             const data = await res.json();
             return data;
         }
     })
 
     const handleProductReportToAdmin = id => {
-        fetch(`http://localhost:5000/productReportToAdmin/${id}`, {
+        fetch(`https://drim-store-server-dvsrshohan.vercel.app/productReportToAdmin/${id}`, {
             method: 'PUT'
         })
             .then(res => res.json())

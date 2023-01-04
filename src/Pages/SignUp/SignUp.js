@@ -24,7 +24,7 @@ const SignUp = () => {
         queryKey: ['user', 'email'],
         queryFn: async () => {
 
-            const res = await fetch(`http://localhost:5000/user?email=${userEmail}`);
+            const res = await fetch(`https://drim-store-server-dvsrshohan.vercel.app/user?email=${userEmail}`);
             const data = await res.json();
             return data;
         }
@@ -67,7 +67,7 @@ const SignUp = () => {
     const saveUser = (name, email, role) => {
         const user = { name, email, role };
         console.log(user)
-        fetch('http://localhost:5000/users', {
+        fetch('https://drim-store-server-dvsrshohan.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
