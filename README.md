@@ -1,9 +1,9 @@
 # Drim Store
 
-Live Website link: <br>
+Live Website link: https://drim-store.web.app/<br>
 
-adminEmail: admin@mahin.com<br>
-adminPassword: 1234A#<br>
+adminEmail: admin@drimestore.com<br>
+adminPassword: 052020@Sr<br>
 
 Hear are some of the  Feature of This Website<br/>
 
