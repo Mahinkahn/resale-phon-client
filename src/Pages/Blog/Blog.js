@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='container mx-auto my-12'>
+        <div className='container mx-auto '>
 
             <div className="my-6">
                 <h2 className="text-3xl font-semibold text-center">Our Blogs</h2>
@@ -69,7 +69,7 @@ const Blog = () => {
                 <div className="collapse-content">
                     <ul>
                         <li>Angular is a front-end framework with lots of components, services, and tools.  On Angular’s site, you can see that they define Angular as: “The modern web developer’s platform”. It is developed and maintained by Google developers, but curiously it is not used to implement any of their most common products such as Search or YouTube. Angular has its own library, NgRx, a project for state management inspired by Redux and implemented using RxJS.</li>
-                        
+
                         <li>React is considered a UI library. They define themselves as:“A JavaScript library for building user interfaces”Facebook developers are behind the development and maintenance of this library. And, in this case, most of Facebook’s products are made with React.React uses React Redux, a project maintained by the Redux team.</li>
 
                         <li>Last but not least, Vue.js is, according to its site:“A progressive JavaScript framework”. Vue.js is developed and led by Evan You, but also it counts on a huge open-source community.Vue.js has its own library, called Vuex.</li>
